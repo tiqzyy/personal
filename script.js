@@ -18,7 +18,7 @@ hLinks.forEach(link=>{
 
 // auto typing
 var texts = ["Hi, Welcome To My Website", "Have a Nice Day"]; // Array teks yang ingin ditampilkan
-    var speed = 50; // Kecepatan pengetikan (dalam milidetik)
+    var speed = 60; // Kecepatan pengetikan (dalam milidetik)
     var typingTextElement = document.getElementById("typing-text");
     var textIndex = 0;
     var charIndex = 0;
