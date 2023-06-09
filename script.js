@@ -16,6 +16,36 @@ hLinks.forEach(link=>{
   })
 })
 
-moon.addEventListener("click", ()=>{
-  body.classList.toggle("dark")
-})
+// auto typing
+var texts = ["Hi, Welcome To My Website", "Have a Nice Day"]; // Array teks yang ingin ditampilkan
+    var speed = 50; // Kecepatan pengetikan ,ilidetik
+    var typingTextElement = document.getElementById("typing-text");
+    var textIndex = 0;
+    var charIndex = 0;
+
+    function typeText() {
+      if (charIndex < texts[textIndex].length) {
+        typingTextElement.innerHTML += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, speed);
+      } else {
+        setTimeout(eraseText, speed);
+      }
+    }
+
+    function eraseText() {
+      if (charIndex > 0) {
+        typingTextElement.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseText, speed);
+      } else {
+        textIndex++;
+        if (textIndex >= texts.length) {
+          textIndex = 0; // Reset indeks teks saat mencapai akhir array
+        }
+        setTimeout(typeText, speed);
+      }
+    }
+
+    // Memulai pengetikan otomatis ketika halaman dimuat
+    window.onload = typeText;
