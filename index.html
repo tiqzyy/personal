@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+</head>
+<body class="font-nunito">
+  <div class="h-1/2 lg:h-screen sm:h-screen bg-gradient-to-t from-indigo-300 overflow-hidden">
+
+    <nav class="w-full fixed  top-0 left-0 flex items-center z-10 bg-white">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="px-4">
+          <a href="#" class="font-bold text-2xl text-indigo-700 block py-5">Anwar</a>
+        </div>
+        <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+          <li class="hover:text-indigo-500">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#about">About</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#resume">Resume</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="flex items-center">
+          <!-- twitter -->
+          <a href="#" target="_blank" class="w-4 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+          <!-- youtube -->
+          <a href="https://www.youtube.com/@muhammadanwarrahimi1674" target="_blank" class="w-4 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          <a href="https://www.instagram.com/anwartzy" target="_blank" class="w-4 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+          <a href="mailto:muhmmdanwar31@gmail.com" target="_blank" class="w-4 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a>
+        </div>
+
+        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20 px-4">
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+        <ul id="menu"class="hidden bg-indigo-500 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+          <li class="hover:text-indigo-500">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#">About</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#">Resume</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#">Gallery</a>
+          </li>
+          <li class="hover:text-indigo-500">
+            <a href="#">Contact</a>
+          </li>
+      </ul>
+
+      </div>
+    </nav>
+
+    <!-- intro content -->
+      <!-- image -->
+      <img
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="gambar2-removebg-preview.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
+      ></div>
+      <!-- animated text -->
+      <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+        <span class="text-gray-600 text-5xl">Muhammad Anwar</span>
+        <p id="text" class="text-indigo-500 text-3xl">Mahasiswa</p>
+      </div>
+      <!-- texts -->
+      <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-gray-400 p-6 h-fit w-1/3">
+        <h1 class="text-4xl font-bold text-indigo-900">Hi, Welcome To My Website</h1>
+        
+        <a class="bg-indigo-500 text-white text-2xl px-2 py-2 rounded-md font-semibold w-fit"
+          href="#about">Here Me</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div id="about" class="px-10">
+    <div class="container mx-auto flex py-10 flex-col-reverse lg:flex-row items-center gap-10"
+    >
+      <!-- left -->
+      <div class="">
+        <img class="h-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-700 " src="gambar1-removebg-preview.png" alt=""/>
+      </div>
+      <!-- right -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class="text-gray-600 text-3xl font-bold">ABOUT</h1>
+        <hr class="w-14 h-1 my-1 bg-blue-500 border-0 rounded ">
+        <p class="text-gray-400">
+          Helloo.. sebelumnya perkenalkan nama saya Muhammad Anwar Rahimi biasa dipanggil Anwar. Saya seorang Mahasiswa Sekolah Tinggi Teknologi Bontang.
+        </p>
+        <div class="grid grid-cols-2">
+          <div>
+            <ul>
+              <li><i class="bi bi-rounded-right"></i> <strong>TTL:</strong> 31 Agustus 2002</li>
+              <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> muhmmdanwar.wordpress.com</li>
+              <li><i class="bi bi-rounded-right"></i> <strong>No.Hp:</strong> +62-858-2251-6059</li>
+              <li><i class="bi bi-rounded-right"></i> <strong>Tempat Tinggal:</strong> Loktuan, Bontang Utara</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><i class="bi bi-rounded-right"></i> <strong>Umur:</strong> 20</li>
+              <li><i class="bi bi-rounded-right"></i> <strong>Pekerjaan:</strong> Mahasiswa</li>
+              <li><i class="bi bi-rounded-right"></i> <strong>Hobi:</strong> Sport, Esport</li>
+              <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> admin@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- bawah -->
+        <p class="text-gray-400">
+          Terima kasih buat pengunjung website. Jangan lupa buat follow and subscribe media sosial admin hehe...
+        </p>
+        <!-- skill -->
+        <h1 class="text-gray-600 text-3xl font-bold">SKILLS</h1>
+        <hr class="w-14 h-1 my-1 bg-blue-500 border-0 rounded">
+        <div class="grid grid-cols-2">
+          <!-- kiri -->
+          <div class="pr-5">
+            <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-gray-400 ">HTML</span>
+            <span class="text-sm font-medium text-gray-400 ">95%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+              <div class="bg-blue-500 h-2.5 rounded-full" style="width: 95%"></div>
+            </div>
+            <div class="flex justify-between mb-1 mt-3">
+            <span class="text-base font-medium text-gray-400 ">CSS</span>
+            <span class="text-sm font-medium text-gray-400 ">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+              <div class="bg-blue-500 h-2.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="flex justify-between mb-1 mt-3">
+            <span class="text-base font-medium text-gray-400 ">Javascript</span>
+            <span class="text-sm font-medium text-gray-400 ">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+              <div class="bg-blue-500 h-2.5 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          <!-- kanan -->
+          <div class="pr-5">
+            <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-gray-400 ">PHP</span>
+            <span class="text-sm font-medium text-gray-400 ">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+              <div class="bg-blue-500 h-2.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="flex justify-between mb-1 mt-3">
+            <span class="text-base font-medium text-gray-400 ">Wordpress/CMS</span>
+            <span class="text-sm font-medium text-gray-400 ">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+              <div class="bg-blue-500 h-2.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <div class="flex justify-between mb-1 mt-3">
+              <span class="text-base font-medium text-gray-400 ">Microsoft Office</span>
+              <span class="text-sm font-medium text-gray-400 ">90%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 90%"></div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- resume -->
+  <div id="resume" class="bg-inherit">
+    <div class="container mx-auto py-10">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-gray-600 text-3xl font-bold">RESUME</h1>
+        <hr class="w-14 h-1 my-1 bg-blue-500 border-0 rounded">
+        <p class="w-1/2 text-center text-gray-400">
+          Berikut riwayat pendidikan dan beberapa organisasi yang pernah saya ikuti selama masa pendidikan
+          </p>
+          
+<ol class="items-center sm:flex">
+  <li class="relative mb-6 sm:mb-0">
+      <div class="flex items-center">
+          <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+              <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+          </div>
+          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+      </div>
+      <div class="mt-3 sm:pr-8">
+          <h3 class="text-2xl font-semibold text-gray-900 ">Pendidikan</h3>
+          <p class="text-base font-normal text-gray-500 italic">"Pendidikan adalah senjata paling mematikan di dunia, karena dengan <br> pendidikan, kamu dapat mengubah dunia"</p>
+              <div class="py-5">
+                <h3 class="text-xl text-blue-500 font-bold">Sekolah Tinggi Teknologi Bontang</h3>
+                <div class="text-base text-blue-700 font-semibold w-fit text-center bg-blue-50 rounded-full px-3">2021 - Sekarang</div>
+                <h3 class="text-xl text-blue-500 font-bold pt-4">SMK Negeri 2 Kandangan</h3>
+                <div class="text-base text-blue-700 font-semibold w-fit text-center bg-blue-50 rounded-full px-3">2018 - 2021</div>
+                <h3 class="text-xl text-blue-500 font-bold pt-4">MTS Satu Atap Al-Azhar</h3>
+                <div class="text-base text-blue-700 font-semibold w-fit text-center bg-blue-50 rounded-full px-3">2015 - 2018</div>
+              </div>
+      </div>
+      <li class="relative mb-6 sm:mb-0">
+        <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div class="mt-3 sm:pr-8">
+            <h3 class="text-2xl font-semibold text-gray-900 ">Organisasi</h3>
+            <p class="text-base font-normal text-gray-500 italic">"Jika semua orang bergerak maju bersama, maka kesuksesan akan <br>datang dengan sendirinya"</p>
+                <div class="py-5">
+                  <h3 class="text-xl text-blue-500 font-bold">Computer Programming, Analyst and Network Layer</h3>
+                  <div class="text-base text-blue-700 font-semibold w-fit text-center bg-blue-50 rounded-full px-3">2021 - 2022</div>
+                  <h3 class="text-xl text-blue-500 font-bold pt-4">Himpunan Mahasiswa Teknik Informatika</h3>
+                  <div class="text-base text-blue-700 font-semibold w-fit text-center bg-blue-50 rounded-full px-3">2021-2022</div>
+                  <h3 class="text-xl text-blue-500 font-bold pt-4">Kelompok Ilmiah Remaja</h3>
+                  <div class="text-base text-blue-700 font-semibold w-fit text-center bg-blue-50 rounded-full px-3">2018-2019</div>
+                </div>
+        </div>
+    </ol>
+
+        </p>
+      </div>
+      <!-- bottom -->
+      
+  </div>
+  <!-- gallery -->
+  <div id="gallery" class="py-10 dark:bg-slate-100">
+    <div class="container mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-gray-600 text-3xl font-bold">GALLERY</h1>
+        <hr class="w-14 h-1 my-1 bg-blue-500 border-0 rounded">
+      </div>
+      <!-- bottom -->
+      <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+        
+        
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img src="5.jpeg" />
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img src="6.jpeg" />
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img src="8.jpeg" />
+        </div>
+        <!-- card -->
+        <div
+          class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+        >
+          <img src="1.jpeg" />
+        </div>
+        
+        <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+          <video class="w-full" controls>
+            <source src="video1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+      <video class="w-full" controls>
+        <source src="video4.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+        <video class="w-full" controls>
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+        <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+          <video class="w-full" controls>
+            <source src="video2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact" class="dark:bg-white">
+    <div class="container py-10 mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-gray-600 text-3xl font-bold">CONTACT</h1>
+        <hr class="w-14 h-1 mb-5 bg-blue-500 border-0 rounded">
+        <div class="flex items-center">
+        <!-- twitter -->
+        <a href="#" target="_blank" class="w-10 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+        <!-- youtube -->
+        <a href="https://www.youtube.com/@muhammadanwarrahimi1674" target="_blank" class="w-10 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/anwartzy" target="_blank" class="w-10 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+        <a href="mailto:muhmmdanwar31@gmail.com" target="_blank" class="w-10 h-8 mr-3 flex hidden md:flex "><svg role="img" class="fill-gray-400 hover:fill-indigo-400" width="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a>
+      </div>
+    </div>
+      <!-- bottom -->
+      <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+        <input
+          class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-100 dark:ring-0 dark:text-black"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-100 dark:ring-0 dark:text-black"
+          type="email"
+          placeholder="Email"
+        />
+        <textarea
+          class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-100 dark:ring-0 dark:text-black"
+          cols="30"
+          rows="10"
+          placeholder="Masukan / Saran..."
+        ></textarea>
+        <button
+          class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-gray-800">
+  <div class="container mx-auto py-5 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <img class="w-8" src="" alt="" />
+      <span class="text-2xl font-bold text-white">Anwar.</span>
+    </div>
+    <span class="hidden md:block font-medium text-white">© 2023. All Rights Reserved</span>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
